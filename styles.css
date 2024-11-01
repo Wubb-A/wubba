@@ -1,5 +1,4 @@
 /* Yosguel Palma CTP */
-
 /* General */
 * {
     margin: 0;
@@ -82,10 +81,18 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 400px;
-    background-color: #1a1a2e;
+    height: auto; /* Ajustar a la altura automática */
     padding: 20px;
+    background-color: #1a1a2e;
     border-radius: 10px;
+}
+
+/* Contenedor de botones */
+.hero-buttons {
+    display: flex; /* Usar Flexbox */
+    justify-content: center; /* Centrar botones */
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px; /* Espacio superior */
 }
 
 .hero-content {
@@ -271,87 +278,9 @@ footer {
     padding: 20px 0;
     background-color: rgba(31, 31, 46, 0.8);
     color: #00d8ff;
+    margin-top: 40px; /* Espacio arriba del pie de página */
 }
 
-/* Consultas de Medios para Adaptabilidad */
-@media (max-width: 768px) {
-    /* Encabezado */
-    header {
-        padding: 10px 15px; /* Ajustar espaciado */
-    }
-
-    .logo-img {
-        width: 40px; /* Disminuir tamaño del logo */
-    }
-
-    .logo-title {
-        font-size: 1.5rem; /* Ajustar tamaño de fuente del título */
-    }
-
-    nav {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        gap: 10px; /* Espacio más pequeño entre elementos */
-    }
-
-    .slogan {
-        font-size: 1rem; /* Ajustar tamaño de la frase */
-    }
-
-    /* Sección Principal */
-    .hero-container {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        height: auto; /* Ajustar altura automática */
-        padding: 15px; /* Ajustar espaciado */
-    }
-
-    .hero-content {
-        text-align: center; /* Centrar contenido en móviles */
-        margin-bottom: 15px; /* Espacio entre contenido y imagen */
-    }
-
-    .hero-content h2 {
-        font-size: 1.5rem; /* Ajustar tamaño del título */
-    }
-
-    .description {
-        font-size: 1rem; /* Ajustar tamaño de la descripción */
-    }
-
-    /* Botones */
-    button.btn-primary,
-    button.btn-secondary {
-        width: 100%; /* Botones ocupan el 100% del ancho */
-        padding: 15px; /* Ajustar espaciado de botones */
-        margin-bottom: 10px; /* Espacio entre botones */
-    }
-
-    .contact-buttons {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: center; /* Centrar botones */
-        gap: 10px; /* Espacio entre botones */
-    }
-
-    /* Sección de Productos */
-    .product-container {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: center; /* Centrar productos */
-        gap: 1rem; /* Espacio entre productos */
-    }
-
-    .product-item {
-        width: 90%; /* Ajustar ancho de productos */
-    }
-
-    /* Información y Secciones */
-    #info,
-    #contacto,
-    #productos {
-        padding: 20px; /* Ajustar espaciado */
-        margin: 20px 0; /* Espacio vertical */
-    }
-
-    /* Footer */
-    footer {
-        padding: 15px 0; /* Ajustar espaciado */
-    }
+footer h3 {
+    margin-bottom: 10px;
 }
