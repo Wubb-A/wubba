@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wubb-A</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS para el botón de menú */
+        .menu-toggle {
+            display: none; /* Ocultar por defecto */
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: flex; /* Mostrar la navegación en pantallas pequeñas */
+                flex-direction: column; /* Colocar elementos en columna */
+            }
+
+            .menu-toggle {
+                display: flex; /* Mostrar el botón del menú */
+            }
+
+            .nav-active {
+                display: none; /* Asegúrate de que no esté visible por defecto */
+                transition: display 0.3s ease; /* Añade transición para animación */
+            }
+
+            .nav-active.active {
+                display: flex; /* Mostrar el menú cuando tenga la clase "active" */
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,9 +43,12 @@
                 <h1 class="logo-title">Wubb-A</h1>
             </div>
             <nav>
-                <a href="#productos">Productos</a>
-                <a href="#contacto">Contacto</a>
-		<a href="https://forms.gle/Hzi1ifWeYd5ox3WC8" target="_blank">Encuesta</a>
+                <div class="menu-toggle">☰</div> <!-- Botón de menú -->
+                <div class="nav-active">
+                    <a href="#productos">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="https://forms.gle/Hzi1ifWeYd5ox3WC8" target="_blank">Encuesta</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -55,16 +87,15 @@
         </section>
 
         <!-- Sección de Contacto -->
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
-    <div class="contact-buttons">
-        <a href="https://wa.me/50660539511" class="contact-button whatsapp">WhatsApp</a>
-        <a href="https://www.instagram.com/yosguel_palma/" class="contact-button instagram">Instagram</a>
-        <a href="https://www.facebook.com/yosguel.palma" class="contact-button facebook">Facebook</a>
-    </div>
-</section>
-
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/50660539511" class="contact-button whatsapp">WhatsApp</a>
+                <a href="https://www.instagram.com/yosguel_palma/" class="contact-button instagram">Instagram</a>
+                <a href="https://www.facebook.com/yosguel.palma" class="contact-button facebook">Facebook</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -74,5 +105,15 @@
         <h3>yosguelpalma@gmail.com</h3>
         <p>&copy; 2024 Yosguel Palma. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Script para manejar la funcionalidad del botón de menú
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navActive = document.querySelector('.nav-active');
+
+        menuToggle.addEventListener('click', () => {
+            navActive.classList.toggle('active'); // Cambia la clase 'active' en el menú
+        });
+    </script>
 </body>
 </html>
