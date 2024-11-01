@@ -1,3 +1,5 @@
+/* Yosguel Palma CTP */
+
 /* General */
 * {
     margin: 0;
@@ -15,7 +17,7 @@ body {
 /* Encabezado */
 header {
     background-color: rgba(31, 31, 46, 0.8);
-    padding: 15px 30px; /* Aumentar el padding */
+    padding: 10px 20px;
     color: #00d8ff;
     position: fixed;
     width: 100%;
@@ -35,72 +37,71 @@ header {
 }
 
 .logo-img {
-    width: 60px; /* Aumentar tamaño de logo */
+    width: 50px;
     height: auto;
-    margin-right: 15px; /* Espacio entre logo y título */
+    margin-right: 10px;
 }
 
 .logo-title {
-    font-size: 2rem; /* Aumentar tamaño de fuente */
+    font-size: 1.8rem;
 }
 
 nav {
     display: flex;
-    gap: 25px; /* Espacio entre enlaces */
+    gap: 20px;
 }
 
 nav a {
-    background: rgba(255, 0, 127, 0.3); /* Más suave */
-    padding: 12px 18px; /* Aumentar padding */
-    border-radius: 25px; /* Hacer bordes más redondeados */
+    background: rgba(255, 0, 127, 0.2);
+    padding: 10px 15px;
+    border-radius: 20px;
     color: #ff007f;
-    text-decoration: none;
+    text-decoration: none; /* Eliminar subrayado */
     font-weight: bold;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s; /* Efecto de transición */
 }
 
 nav a:hover {
-    background: rgba(255, 0, 127, 0.6); /* Efecto hover más suave */
+    background: rgba(255, 0, 127, 0.5);
     color: #00d8ff;
-    box-shadow: 0 0 8px rgba(255, 0, 127, 0.5); /* Efecto de iluminación */
+    box-shadow: 0 0 5px rgba(255, 0, 127, 0.5); /* Efecto de iluminación sutil */
 }
 
 .slogan {
-    font-size: 1.4rem; /* Aumentar tamaño de fuente */
+    font-size: 1.2rem;
     color: #00d8ff;
-    margin-top: 10px; /* Aumentar margen superior */
+    margin-top: 5px;
 }
 
 /* Sección Principal */
 main {
-    margin-top: 100px; /* Aumentar margen superior */
+    margin-top: 80px;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 450px; /* Aumentar altura */
+    height: 400px;
     background-color: #1a1a2e;
-    padding: 30px; /* Aumentar padding */
-    border-radius: 15px; /* Aumentar radio de bordes */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero-content {
     text-align: left;
-    animation: fadeIn 1s; /* Añadir animación */
 }
 
 .hero-content h2 {
-    font-size: 2.5rem; /* Aumentar tamaño de fuente */
+    font-size: 2rem;
     color: #ff007f;
-    margin-bottom: 15px; /* Aumentar margen inferior */
+    margin-bottom: 10px;
 }
 
 .description {
-    font-size: 1.2rem; /* Aumentar tamaño de fuente */
+    font-size: 1.1rem;
     color: #a6a6a6;
-    margin-bottom: 25px; /* Aumentar margen inferior */
+    margin-bottom: 20px;
 }
 
 .hero-image {
@@ -109,7 +110,7 @@ main {
 }
 
 .arduino-img {
-    width: 300px; /* Aumentar tamaño de imagen */
+    width: 250px;
     height: auto;
 }
 
@@ -118,139 +119,239 @@ button.btn-primary {
     background: #ff007f;
     color: #ffffff;
     border: none;
-    padding: 12px 25px; /* Aumentar padding */
-    border-radius: 25px; /* Hacer bordes más redondeados */
+    padding: 10px 20px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 button.btn-primary:hover {
-    background: #ff007f;
-    box-shadow: 0 0 12px #ff007f, 0 0 25px #ff007f; /* Efecto de neón más pronunciado */
+    background: #ff007f; /* Mantener el mismo color */
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f; /* Efecto de neón al pasar el mouse */
 }
 
 button.btn-secondary {
     background: #33334d;
     color: #00d8ff;
     border: none;
-    padding: 12px 25px; /* Aumentar padding */
-    border-radius: 25px; /* Hacer bordes más redondeados */
+    padding: 10px 20px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 button.btn-secondary:hover {
-    background: #33334d;
-    color: #ff007f;
-    box-shadow: 0 0 12px #00d8ff, 0 0 25px #00d8ff; /* Efecto de neón más pronunciado */
+    background: #33334d; /* Mantener el mismo color */
+    color: #ff007f; /* Cambiar color de texto en hover */
+    box-shadow: 0 0 10px #00d8ff, 0 0 20px #00d8ff; /* Efecto de neón al pasar el mouse */
 }
 
 /* Sección de Productos */
 #productos {
     background-color: #1a1a2e;
-    padding: 50px 30px; /* Aumentar padding */
-    border-radius: 15px; /* Aumentar radio de bordes */
-    margin: 50px 20px; /* Aumentar margen */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px 20px;
 }
 
 #productos h2 {
-    margin-bottom: 30px; /* Aumentar margen inferior */
+    margin-bottom: 25px;
 }
 
 .product-container {
     display: flex;
     justify-content: center;
-    gap: 3rem; /* Aumentar espacio entre productos */
+    gap: 2rem;
 }
 
 .product-item {
-    width: 220px; /* Aumentar ancho de producto */
+    width: 200px;
     background-color: #33334d;
-    padding: 20px; /* Aumentar padding */
-    border-radius: 15px; /* Aumentar radio de bordes */
-    box-shadow: 0 0 15px #00d8ff; /* Sombra más pronunciada */
-    transition: transform 0.3s, box-shadow 0.3s; /* Añadir transición para sombra */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00d8ff;
+    transition: transform 0.3s;
     position: relative;
 }
 
 .product-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px #00d8ff; /* Sombra en hover */
 }
 
 .product-item img {
     width: 100%;
-    border-radius: 10px; /* Aumentar radio de bordes de imágenes */
+    border-radius: 8px;
 }
 
 /* Círculo alrededor del precio */
 .price-container {
     position: absolute;
-    bottom: 20px; /* Aumentar margen inferior */
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 216, 255, 0.4); /* Más suave */
+    background: rgba(0, 216, 255, 0.3);
     border-radius: 50%;
-    padding: 15px 25px; /* Aumentar padding */
+    padding: 10px 20px;
     text-align: center;
 }
 
 .price-container span {
-    font-size: 1.4rem; /* Aumentar tamaño de fuente */
+    font-size: 1.2rem;
     color: #00d8ff;
 }
 
 /* Información */
 #info {
-    padding: 50px 30px; /* Aumentar padding */
+    padding: 40px 20px;
     background-color: #1a1a2e;
     color: #00d8ff;
-    border-radius: 15px; /* Aumentar radio de bordes */
+    border-radius: 10px;
 }
 
 /* Sección de Contacto */
 #contacto {
-    padding: 50px 30px; /* Aumentar padding */
+    padding: 40px 20px;
     background-color: rgba(31, 31, 46, 0.9);
     color: #00d8ff;
-    border-radius: 15px; /* Aumentar radio de bordes */
-    margin: 50px 20px; /* Aumentar margen */
-    text-align: center;
+    border-radius: 10px;
+    margin: 40px 20px;
+    text-align: center; /* Centrar texto */
 }
 
 .contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Aumentar espacio entre botones */
-    margin-top: 30px; /* Aumentar margen superior */
+    display: flex; /* Usar flexbox para distribuir botones */
+    justify-content: center; /* Centrar botones */
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px; /* Espacio entre texto y botones */
 }
 
 .contact-button {
-    padding: 12px 25px; /* Aumentar padding */
-    border-radius: 25px; /* Hacer bordes más redondeados */
+    padding: 10px 20px;
+    border-radius: 20px;
     font-weight: bold;
-    text-decoration: none;
-    color: white;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Color del texto */
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s; /* Transiciones */
 }
 
 /* Degradado de Instagram */
 .contact-button.instagram {
-    background: linear-gradient(45deg, #E1306C, #C13584, #F56040);
-    box-shadow: 0 0 8px #E1306C, 0 0 15px #E1306C; /* Efecto de neón */
+    background: linear-gradient(45deg, #E1306C, #C13584, #F56040); /* Degradado de Instagram */
+    box-shadow: 0 0 5px #E1306C, 0 0 10px #E1306C; /* Efecto de neón */
 }
 
 .contact-button.instagram:hover {
-    background: linear-gradient(45deg, #C13584, #E1306C, #F56040);
-    box-shadow: 0 0 15px #E1306C, 0 0 25px #E1306C; /* Efecto de neón en hover */
+    background: linear-gradient(45deg, #C13584, #E1306C, #F56040); /* Efecto hover */
+    box-shadow: 0 0 10px #E1306C, 0 0 20px #E1306C; /* Efecto de neón en hover */
 }
 
 .contact-button.whatsapp {
-    background: linear-gradient(45deg, #25D366, #128C7E);
+    background: linear-gradient(45deg, #25D366, #128C7E); /* Degradado de WhatsApp */
 }
 
 .contact-button.whatsapp:hover {
-    background: linear-gradient(45deg, #128C7E, #25D366);
-    box-shadow: 0 0 15px #25D366, 0 0 25px #25D366; /* Efecto de
+     background: linear-gradient(45deg, #128C7E, #25D366); /* Efecto hover */
+     box-shadow: 0 0 10px #25D366, 0 0 20px #25D366; /* Efecto de neón en hover */
+}
+
+.contact-button.facebook {
+    background: linear-gradient(45deg, #3b5998, #8b9dc3); /* Degradado de Facebook */
+}
+
+.contact-button.facebook:hover {
+    background: linear-gradient(45deg, #8b9dc3, #3b5998); /* Efecto hover */
+    box-shadow: 0 0 10px #3b5998, 0 0 20px #3b5998; /* Efecto de neón en hover */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(31, 31, 46, 0.8);
+    color: #00d8ff;
+}
+
+/* Consultas de Medios para Adaptabilidad */
+@media (max-width: 768px) {
+    /* Encabezado */
+    header {
+        padding: 10px 15px; /* Ajustar espaciado */
+    }
+
+    .logo-img {
+        width: 40px; /* Disminuir tamaño del logo */
+    }
+
+    .logo-title {
+        font-size: 1.5rem; /* Ajustar tamaño de fuente del título */
+    }
+
+    nav {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        gap: 10px; /* Espacio más pequeño entre elementos */
+    }
+
+    .slogan {
+        font-size: 1rem; /* Ajustar tamaño de la frase */
+    }
+
+    /* Sección Principal */
+    .hero-container {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        height: auto; /* Ajustar altura automática */
+        padding: 15px; /* Ajustar espaciado */
+    }
+
+    .hero-content {
+        text-align: center; /* Centrar contenido en móviles */
+        margin-bottom: 15px; /* Espacio entre contenido y imagen */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem; /* Ajustar tamaño del título */
+    }
+
+    .description {
+        font-size: 1rem; /* Ajustar tamaño de la descripción */
+    }
+
+    /* Botones */
+    button.btn-primary,
+    button.btn-secondary {
+        width: 100%; /* Botones ocupan el 100% del ancho */
+        padding: 15px; /* Ajustar espaciado de botones */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar botones */
+        gap: 10px; /* Espacio entre botones */
+    }
+
+    /* Sección de Productos */
+    .product-container {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar productos */
+        gap: 1rem; /* Espacio entre productos */
+    }
+
+    .product-item {
+        width: 90%; /* Ajustar ancho de productos */
+    }
+
+    /* Información y Secciones */
+    #info,
+    #contacto,
+    #productos {
+        padding: 20px; /* Ajustar espaciado */
+        margin: 20px 0; /* Espacio vertical */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 0; /* Ajustar espaciado */
+    }
+}
