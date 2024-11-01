@@ -81,7 +81,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: auto; /* Ajustar a la altura automática */
     padding: 20px;
     background-color: #1a1a2e;
     border-radius: 10px;
@@ -171,6 +170,7 @@ button.btn-secondary:hover {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap; /* Permitir el ajuste de elementos en pantallas pequeñas */
 }
 
 .product-item {
