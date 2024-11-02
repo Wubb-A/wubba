@@ -193,6 +193,7 @@ button.btn-secondary:hover {
 }
 
 .product-item {
+    position: relative;
     width: 200px;
     background-color: #33334d;
     padding: 15px;
@@ -202,14 +203,40 @@ button.btn-secondary:hover {
     position: relative;
 }
 
+.cart-button {
+    position: absolute;
+    top: 10px; /* Ajusta el valor según el espacio deseado */
+    right: 10px; /* Ajusta el valor según el espacio deseado */
+    background: #ff007f; /* Color de fondo del botón */
+    color: #ffffff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.cart-button:hover {
+    background: #ff007f; /* Mantener el mismo color */
+    box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f; /* Efecto de neón */
+}
+
+
+
 .product-item:hover {
     transform: scale(1.05);
 }
 
 .product-item img {
     width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
     border-radius: 8px;
+    background-color: #33334d; /* Fondo que aparecerá detrás de imágenes más pequeñas */
 }
+
+
 
 /* Círculo alrededor del precio */
 .price-container {
