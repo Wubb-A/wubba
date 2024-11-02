@@ -323,7 +323,7 @@ nav {
     position: relative; /* Asegura que los elementos se posicionen en relación al nav */
 }
 
-/* Responsivo */
+/* Responsive */
 @media (max-width: 768px) {
     nav {
         display: flex; /* Muestra la navegación en pantallas pequeñas */
@@ -338,7 +338,7 @@ nav {
     }
 
     .nav-active {
-        display: none; /* Asegúrate de que no esté visible por defecto */
+        display: none; /* Asegura de que no esté visible por defecto */
         transition: display 0.3s ease; /* Añade transición para animación */
     }
 
